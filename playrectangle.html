@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rectangle</title>
+    <style>
+        .rectangle{
+            width: 200px;
+            height: 200px;
+            margin: auto;
+            border: solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="rectangle"></div>
+    <button onclick="changecircle()">
+        change to circle
+
+    </button>
+    <button onclick="show()">
+        show
+
+
+    </button>
+    
+    <button onclick="hide()">
+        hide
+        
+
+
+    </button>
+    <script>
+        let div=document.querySelector(".rectangle");
+        function changecircle(){
+            div.style.borderRadius="50%";
+        }
+        div.onmouseenter=function(){
+            div.style.background="red";
+        }
+        div.onmouseout=function(){
+            div.style.background="none";
+        }
+        function show(){
+            div.style.display="block";
+        }
+        function hide(){
+            div.style.display="none";
+        }
+
+    </script>    
+</body>
+</html>
