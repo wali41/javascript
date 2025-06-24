@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <img class="slider" src="images__14_-removebg-preview.png" style="height: 300px; width: 50%;">
+        <img class="slider" src="images__15_-removebg-preview.png" style="height: 300px; width: 50%;">
+        <img class="slider" src="images__16_-removebg-preview.png" style="height: 300px; width: 50%;">
+
+        <img class="slider" src="download__58_-removebg-preview.png" style="height: 300px; width: 50%;">
+
+        <img class="slider" src="download__57_-removebg-preview.png" style="height: 300px; width: 50%;">
+ 
+    </section>
+    <script>
+      var x =  document.getElementsByClassName("slider");
+      var index =0;
+      carousel();
+      function carousel(){
+    
+          for (var i = 0; i < x.length; i++) {
+
+              x[i].style.display = "none";
+
+          }
+          index =index+1;
+          if (index >= x.length) {
+
+              index = 1;
+
+          }
+          x[index - 1].style.display = "block";
+
+          setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+
+        
+    </script>
+</body>
+</html>
