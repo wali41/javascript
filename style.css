@@ -1,0 +1,62 @@
+/* General Page Styling */
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+    background-color: #b6f8ef;
+}
+
+/* Top Navigation Bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Navigation Links */
+.topnav a {
+    display: inline;
+    color: #1affa3;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Hover Effect for Navigation Links */
+.topnav a:hover {
+    background-color: #111; }
+        /* Button Styling */
+        button {
+            background-color: #ffe066;
+            color: #000;
+        }
+    
+        /* Parallax Image Sections */
+        .pimg1,
+        .pimg2,
+        .pimg3 {
+            position: relative;
+            opacity: 0.70;
+            background-repeat: no-repeat;
+        }
+    
+        /* General Section Styling */
+        .section {
+            text-align: center;
+            padding: 50px 80px;
+        }
+    
+        /* Light Section Theme */
+        .section-light {
+            background-color: #f4f4f4;
+            color: #666;
+        }
+    
+        /* Dark Section Theme */
+        .section-dark {
+            background-color: #282e34;
+            color: #ddd; }
