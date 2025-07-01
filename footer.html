@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>footer in website</title>
+    <style>
+
+        
+.grid-container {
+
+display: grid;
+
+grid-template-columns: auto auto auto;
+
+grid-template-areas:
+
+'header header header'
+
+'menu main main'
+
+'menu footer footer';
+
+background-color: rgb(247, 25, 0);
+
+padding: 10px;
+
+
+}
+          
+div.grid-container > div {
+
+background-color: #e2ed7c;
+
+border: 1px solid #000;
+
+padding: 20px;
+
+text-align: center;
+
+}
+.grid-item1{
+
+grid-area: header;
+
+}
+
+.grid-item2{
+
+grid-area: menu;
+
+}
+
+.grid-item3{
+
+grid-area: main;
+
+}
+
+.grid-item4{
+
+grid-area: footer;
+
+}
+
+        
+    </style>
+</head>
+<body> 
+    <div class="grid-container">
+       <div class="grid-item1 ">header</div> 
+    <div class="grid-item2 ">menu</div>
+    <div class="grid-item3 ">main</div>
+    <div class="grid-item4 ">contact me :036789023 email address joyce.gmailcom address india chennai 56 street haldiram bakers</div>
+
+    </div>   
+</body>
+</html>
